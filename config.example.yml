@@ -1,0 +1,36 @@
+account:
+  server: 'mail.yourserver.com'
+  ssl: true
+  login: 'mustermann@example.com'
+  password: 'not-a-real-password'
+filters:
+  - name: 'Keybase.io'
+    max_age: '30'
+    search:
+      FROM: 'notify@keybase.io'
+    actions:
+      - move: 'Trash'
+  - name: 'Dropbox Paper'
+    max_age: 10
+    search:
+      FROM: paper@dropbox.com
+    actions:
+      - move: 'Trash'
+  - name: 'Ubuntu Sec'
+    max_age: 30
+    search:
+      TO: ubuntu-security-announce@lists.ubuntu.com
+    actions:
+      - move: 'Trash'
+  - name: 'Linode'
+    max_age: 30
+    search:
+      FROM: noreply@linode.com
+    actions:
+      - move: 'Trash'
+  - name: 'Quora Follwer Notifications'
+    max_age: 30
+    search:
+      FROM: follow-noreply@quora.com
+    actions:
+      - move: 'Trash'
