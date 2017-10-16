@@ -24,4 +24,4 @@ Additionally, you can specify a max_age in days, so that only messages that are 
 
 Actions are a set of actions that will be applied to all matching messages. Currently only move is
 implemented, as this is the only thing I need. (Most Email clients unfortunately don't understand
-the correct deletion sematics of IMAP...)
+the correct deletion semantics of IMAP...)
